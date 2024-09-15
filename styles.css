@@ -1,71 +1,327 @@
-html, body {
-  margin: 0;
+
+.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10000; 
+  background-color: #fefbec; 
   padding: 0;
-  height: 100%;
-  overflow-x: hidden; 
 }
 
-.background {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 100vh; 
-}
-
-.image {
-  width: 100vw;
-  height: 768px;
-  background-size: cover; 
-  background-position: center; 
-  flex-shrink: 0; 
-  z-index: -2;
-}
-
-.navbar ul{
-  list-style-type:none;
+.navbar ul {
+  list-style-type: none;
   border-bottom: 2px solid #473c38;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
+}
+
+.navbar li {
+  float: right;
 }
 
 .navbar a {
   border-left: 2px solid #473c38;
   color: #473c38;
   font-size: 32px;
+  font-family: "montserrat";
   text-decoration: none;
   padding: 15px;
   display: block;
   text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
- 
+  padding-right: 50px;
+  padding-left: 50px;
+  transition: background-color .4s ease-in-out, color .4s ease-in-out;
 }
 
 .navbar a:hover {
   background-color: #473c38;
   color: #fefbec;
-  transition: background-color .4s ease-in-out, color .4s ease-in-out; 
-}
-
-.navbar li{
-  float: right;
-
-}
-
-.navbar {
-  z-index:-1;
-  position: fixed;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 1000; 
-  background-color: #fefbec; 
-  padding:0px;
 }
 
 
 h2 {
   padding-left: 50px;
   padding-top: 100px;
+}
+
+body {
+  margin: 100px;
+  background-color: #fefbec;
+  overflow-x: hidden;
+}
+
+.flexbox-container {
+  display: flex;
+  gap: 0.625rem; 
+  align-items: flex-start; 
+  flex-direction: row; 
+  align-items: flex-start; 
+}
+
+.item-1 {
+  max-width: 800px;
+  max-height: 300px;
+  line-height: 35px;
+  margin: 20px; 
+  text-align: center;
+}
+
+.item-2 img {
+  max-width: 450px; 
+  height: auto; 
+  object-fit: cover; 
+  margin-left: 80px;
+  align-items: flex-start;
+  float: left;
+
+}
+.item-3{
+  line-height: 15px;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+
+.name {
+  font-family: "erica one";
+  font-size: 60px;
+  font-weight: normal;
+  color: #f8b64c;
+  margin-left: 390px;
+}
+
+.greeting {
+  font-family: "montserrat";
+  font-size: 30px;
+  color: #473c38;
+  margin-left: 390px;
+}
+
+.introduction {
+  font-family: "montserrat";
+  font-size: 30px;
+  color: #473c38;
+  margin-left: 390px;
+  padding-top: 0px;
+}
+
+.philosophy {
+  font-family: "erica one";
+  font-size: 50px;
+  font-weight: normal;
+  color: #d5a6aa;
+  align-self: flex-start; 
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.item-4 {
+    font-family: "erica one";
+    font-size: 40px;
+    font-weight: normal;
+    color: #73bead;
+    max-width: 45%;
+    text-align: right; 
+}
+
+.logo
+{
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: normal;
+  font-family: "erica one";
+  font-size: 40px;
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: #473c38;
+  z-index: 100000;
+  justify-content: flex-start;
+  
+}
+
+.subheading {
+ font-size: 30px;
+ font-weight: lighter;
+ font-family: "erica one";
+ justify-content: left;
+ color:#473c38;
+ margin-left: 60px; 
+
+}
+
+.content1{
+  font-family: "montserrat";
+  font-size: 20px;
+  color:#473c38;
+  justify-self: right;
+  margin-left: 70px;
+}
+
+.item-5 img {
+  max-width: 400px; 
+  height: auto; 
+  object-fit: cover; 
+  align-items: flex-start; 
+  padding: 0%;
+  margin:0px;
+}
+
+.item-5
+{
+  max-width: 550px;
+  height: auto;
+  height: auto; 
+  object-fit: cover; 
+  align-items: flex-start; 
+  float: right;
+  position: relative;
+  top:-430px;
+  left: -100px;
+}
+
+.item-6 img {
+  max-width: 550px;
+  height: auto; 
+  object-fit: cover; 
+  align-items: flex-start;
+  float: left;
+  padding-top: 150px;
+}
+
+.item-6{
+  flex-direction: column;
+  max-width: 450px; 
+  margin-left: 100px;
+}
+
+.item-7{
+  max-width: 400px;
+  margin-left: 70px;
+
+}
+
+.content2{
+  max-width: 200px;
+  font-family: "montserrat";
+  font-size: 20px;
+  color:#473c38;
+  justify-self: left;
+  align-items: flex-start;
+  position:relative;
+  left: 600px;
+  top: -400px;
+}
+
+.heading1 {
+  font-family: "erica one";
+  font-size: 40px;
+  font-weight: normal;
+  color: #73bead;
+}
+
+.content3
+{
+  font-family: "montserrat";
+  font-size: 20px;
+  max-width: 400px;
+  height: auto;
+  color:#473c38;
+  justify-self: right;
+  margin-left: 70px;
+}
+
+
+.item-8 {
+  justify-self: right;
+  max-width: 450px;
+  text-align: right;
+  height: auto;
+  padding:0px;
+  margin-left: 70px;
+  max-width: 400px;
+  text-align: right; 
+  position: relative;
+  top: -150px;
+}
+
+.item-9 img{
+    max-width: 400px; 
+    height: auto; 
+    object-fit: cover; 
+    align-items: flex-start;
+    position: relative;
+   float: right;
+   top: -600px;
+   right: 170px;
+}
+
+.arrow {
+width: 80px;
+height: 80px;;
+position: fixed;
+bottom: 0px;
+left: 0px;
+margin:20px;
+}
+
+.fb{
+  color: #473c38;
+  transition: 0.3s ease-in-out;
+}
+
+.fb:hover {
+  color:#73bead;
+}
+
+.mail{
+  color: #473c38;
+  transition: 0.3s ease-in-out;
+}
+
+.mail:hover{
+  color: #f8b64c;
+}
+
+.insta{
+  color: #473c38;
+  transition: 0.3s ease-in-out;
+}
+
+.insta:hover{
+  color: #d5a6aa;
+}
+
+.fb
+{
+  float: right;
+  position: fixed;
+  font-size: 50px;
+  top: 7px;
+  right: 230px;
+  z-index: 100000;
+  justify-content: flex-start;
+}
+
+.insta{
+  float: right;
+  position: fixed;
+  font-size: 50px;
+  top: 7px;
+  right: 300px;
+  z-index: 100000;
+  justify-content: flex-start;
+}
+
+.mail{
+  float: right;
+  position: fixed;
+  font-size: 50px;
+  top: 7px;
+  right: 370px;
+  z-index: 100000;
+  justify-content: flex-start;
 }
