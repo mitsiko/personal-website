@@ -78,7 +78,6 @@ body {
 
 }
 .item-3{
-  line-height: 15px;
   margin-top: 100px;
   padding-bottom: 100px;
   flex-grow: 1;
@@ -90,6 +89,7 @@ body {
   font-weight: normal;
   color: #f8b64c;
   margin-left: 390px;
+  line-height: 45px;
 }
 
 .greeting {
@@ -145,7 +145,6 @@ body {
 
 .logo:hover{
   color: #f8b64c;
-
 }
 
 .subheading {
