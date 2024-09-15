@@ -86,7 +86,7 @@ body {
 
 .name {
   font-family: "erica one";
-  font-size: 60px;
+  font-size: 50px;
   font-weight: normal;
   color: #f8b64c;
   margin-left: 390px;
@@ -140,7 +140,12 @@ body {
   color: #473c38;
   z-index: 100000;
   justify-content: flex-start;
-  
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+  color: #f8b64c;
+
 }
 
 .subheading {
